@@ -11,10 +11,13 @@ ATTR = {
 
 
 def main_app():
+    print("Start parsing")
+    print("Loading...")
     data = []
     change_page(data)
     df = pd.DataFrame(data)
     check_csv(df)
+    print("Done!!!")
 
 
 def find_ads_anchor_tag_url(soup):
